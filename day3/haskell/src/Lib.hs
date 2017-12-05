@@ -25,15 +25,20 @@ module Lib ( someFunc ) where
 -- =============================================================================
 -- Solution
 
--- Mimic a hardisk, use odd squares to create an origin, calculate from
+-- Mimic a hardisk, use odd squares to create an origin (down the bottom left
+-- corner), then calculate all mid points from that layer (think onion), and
+-- find the smallest distance.
+-- add the layer number to the distance from nearest mid
 
 --
 --
---   |<------ Width ------>|
---   +---------------------+
---   | 17  16  15  14  13  |
---   | 18   5   4   3  12  |
---   | 19   6   1   2  11  |
+--              +--------------------+
+--              V                    |
+--   |<------ Width ------>|         |
+--   +---------------------+         |
+--   | 17  16  15  14  13  |         |
+--   | 18   5   4   3  12  |         |
+--   | 19   6   1   2  11  |  <---- mid
 --   | 20   7   8   9  10 _|_
 --   | 21  22  23  24  25 Track
 --   +----------------->|
