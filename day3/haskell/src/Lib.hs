@@ -25,12 +25,16 @@ module Lib ( someFunc ) where
 -- =============================================================================
 -- Solution
 
--- Mimic a hardisk, use odd squares to create a baseline (down the bottom left
--- corner), then calculate all mid points from that layer (think onion), and
--- find the smallest distance.
--- add the layer number to the distance from nearest mid
-
+-- Mimic a hardisk,
 --
+-- Given an address, first identify the track that it's on, (calculated through
+-- the odd squares down the bottom right corner)
+--
+-- After the layer is found, identify each midPoint (the points closest to the
+-- middle of the disk)
+--
+-- Then find the minimum distance from the given address to one of the
+-- midpoints.
 --
 --              +--------------------+
 --              V                    |
