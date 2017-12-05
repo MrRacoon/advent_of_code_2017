@@ -34,7 +34,7 @@ module Lib ( someFunc ) where
 -- middle of the disk)
 --
 -- Then find the minimum distance from the given address to one of the
--- midpoints.
+-- midpoints, and add it to the index of the layer.
 --
 --              +--------------------+
 --              V                    |
