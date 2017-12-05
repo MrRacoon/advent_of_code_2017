@@ -25,7 +25,7 @@ module Lib ( someFunc ) where
 -- =============================================================================
 -- Solution
 
--- Mimic a hardisk, use odd squares to create an origin (down the bottom left
+-- Mimic a hardisk, use odd squares to create a baseline (down the bottom left
 -- corner), then calculate all mid points from that layer (think onion), and
 -- find the smallest distance.
 -- add the layer number to the distance from nearest mid
