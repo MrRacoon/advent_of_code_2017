@@ -61,7 +61,7 @@ step = do
         , count   = nextCount
         }
   put nextState
-  return $ nextState
+  return nextState
 
 stopCondition :: DayState Bool
 stopCondition = do
